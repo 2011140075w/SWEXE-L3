@@ -13,3 +13,90 @@
  *= require_tree .
  *= require_self
  */
+
+#container {
+  width: 980px;
+  margin: 20px auto;
+}
+
+#header {
+  width: 720px; 
+  float: right;
+  border-bottom: solid 2px #CCCCCC;
+  margin-top: 10px;
+  padding-bottom: 25px;
+}
+#header ul {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0px;
+}
+#header li {
+  overflow: hidden;
+  display: inline;
+}
+
+#content {
+  width: 720px; 
+  float: right;
+  
+}
+
+#sidebar {
+  width: 220px; 
+  float: left;
+  margin-bottom: 30px;
+}
+#sidebar ul {
+  padding-left: 10px;
+  margin-bottom: 50px;
+}
+#sidebar li {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  margin: 30px 0px 30px;
+  font-size: 15pt;
+  font-weight: 600;
+  text-decoration: none;
+}
+#sidebar img {
+  margin-right: 10px;
+}
+
+#footer {
+  border-top: solid 2px #CCCCCC;
+  text-align: center;
+  clear: both;
+  margin-top: 20px;
+}
+
+
+.tweet {
+  padding: 20px 20px 20px 20px;
+  border-bottom: solid 1px #CCCCCC;
+}
+
+.logo {
+  display: flex;
+  align-items: center
+}
+.logo p { 
+  font-size: 15pt;
+  font-weight: bold;
+}
+
+.tweet-button a {
+  color: #ffffff;
+  width: 200px;
+  background: #4a99e9;
+  height: 50px;
+  border-radius: 50px;
+  text-align: center;
+  line-height: 50px;
+  display: block;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+}
+

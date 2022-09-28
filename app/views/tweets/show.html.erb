@@ -8,9 +8,7 @@
 </p>
 
 <p>
-    <%= button_to '編集', "/tweets/#{@tweet.id}/edit", method: :get%>
+    <%= button_to '編集', edit_tweet_path(@tweet.id), method: :get%>
     <br>
-    <%= button_to '削除', "/tweets/#{@tweet.id}", method: :delete %>  
+    <%= button_to '削除', tweet_path(@tweet.id), method: :delete %>  
 </p>
-
-<p> <%= link_to '一覧へ戻る', '/tweets' %> </p>

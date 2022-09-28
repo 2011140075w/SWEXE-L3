@@ -17,7 +17,7 @@ class TweetsController < ApplicationController
       flash[:notice] = 'ツイートしました'
       redirect_to root_path
     else
-      render 'new'
+      render new_tweet_path
     end
   end
   
@@ -31,7 +31,7 @@ class TweetsController < ApplicationController
       flash[:notice] = '編集しました'
       redirect_to root_path
     else
-      render 'edit'
+      render edit_tweet_path
     end
   end
   

@@ -1,0 +1,42 @@
+<div class=logo>
+    <%= image_tag 'logo.jpg', size: '50x50' %>
+</div>
+
+<ul>
+    <li> 
+        <%= image_tag 'home.svg', size: '25x25' %>
+        <%= link_to 'ホーム', root_path %> 
+    </li>
+    <li>
+        <%= image_tag 'hashtag.svg', size: '25x25' %>
+        <%= link_to '話題を検索', '#' %> 
+    </li>
+    <li>
+        <%= image_tag 'bell.svg', size: '25x25' %>
+        <%= link_to '通知', '#' %> 
+    </li>
+    <li>
+        <%= image_tag 'message.svg', size: '25x25' %>
+        <%= link_to 'メッセージ', '#' %> 
+    </li>
+    <li>
+        <%= image_tag 'bookmark.svg', size: '25x25' %>
+        <%= link_to 'ブックマーク', '#' %> 
+    </li>
+    <li>
+        <%= image_tag 'list.svg', size: '25x25' %>
+        <%= link_to 'リスト', '#' %> 
+    </li>
+    <li>
+        <%= image_tag 'person.svg', size: '25x25' %>
+        <%= link_to 'プロフィール', '#' %> 
+    </li>
+    <li>
+        <%= image_tag '3ten.svg', size: '25x25' %>
+        <%= link_to 'もっと見る', '#' %> 
+    </li>
+</ul>
+
+<div class=tweet-button>
+    <%= link_to 'ツイートする', new_tweet_path %>
+</div>
