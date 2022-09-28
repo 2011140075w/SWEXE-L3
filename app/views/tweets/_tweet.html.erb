@@ -1,0 +1,32 @@
+<div class=tweet>
+    <div class=tweet-left>
+        <%= image_tag 'user-solid', size: '25x25' %>
+    </div>
+    <div class=tweet-right>
+        <div class=tweet-info>
+            <div class=tweet-info-left>
+                <div class=tweet-author>
+                    <p class=tweet-author-user>ユーザー</p>
+                    <p class=tweet-author-id>@user</p>
+                </div>
+                <div class=tweet-time>
+                    <%= "・ #{((Time.current - tweet.tdate) / 60).floor}分前"  %> 
+                </div>
+            </div>
+            <div class=tweet-info-right>
+                <div class=tweet-detail>
+                    <%= link_to (image_tag '3ten.svg', size: '20x20'), tweet_path(tweet.id) %>
+                </div>
+            </div>
+        </div>
+        <div class=tweet-message>
+            <%= tweet.message %>
+        </div>
+
+        <% if tweet.image.present?  %>
+            <div class=tweet-image>
+                <%= image_tag "/get_image/#{tweet.id}", :width => '620'%>
+            </div>
+        <% end %>
+    </div>
+</div>

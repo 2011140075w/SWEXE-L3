@@ -1,14 +1,6 @@
-<p>
-    <%= @tweet.message %> 
-    </br>
-    <% if @tweet.image.present?  %>
-        <p><%= image_tag "/get_image/#{@tweet.id}", :height => '200'%></p>
-    <% end %>
-    <%= @tweet.tdate.strftime('%Y/%m/%d %H:%M') %>
-</p>
+<%= render 'tweet', tweet: @tweet %>
 
-<p>
+<div class=tweet-action>
     <%= button_to '編集', edit_tweet_path(@tweet.id), method: :get%>
-    <br>
     <%= button_to '削除', tweet_path(@tweet.id), method: :delete %>  
-</p>
+</div>
