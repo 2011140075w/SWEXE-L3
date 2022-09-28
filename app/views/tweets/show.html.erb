@@ -1,0 +1,16 @@
+<p>
+    <%= @tweet.message %> 
+    </br>
+    <% if @tweet.image.present?  %>
+        <p><%= image_tag "/get_image/#{@tweet.id}", :height => '200'%></p>
+    <% end %>
+    <%= @tweet.tdate.strftime('%Y/%m/%d %H:%M') %>
+</p>
+
+<p>
+    <%= button_to '編集', "/tweets/#{@tweet.id}/edit", method: :get%>
+    <br>
+    <%= button_to '削除', "/tweets/#{@tweet.id}", method: :delete %>  
+</p>
+
+<p> <%= link_to '一覧へ戻る', '/tweets' %> </p>

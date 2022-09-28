@@ -1,0 +1,13 @@
+<%= form_for @tweet, url: { action: :update } do |f| %>
+    <%= render 'shared/error', object: @tweet %>
+    <p>
+        <%= f.label :message, '内容' %>
+        <%= f.text_field :message, size: 20, value: @tweet.message %>
+    </p>
+    <p>
+        <%= f.label :image, '画像' %>
+        <%= f.file_field :image %>
+    </p>
+    <%= f.hidden_field :tdate, value: Time.current%>
+    <%= f.submit '編集する' %>
+<% end %>
