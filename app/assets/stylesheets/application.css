@@ -181,6 +181,10 @@
   margin-bottom: 10px;
   word-break: break-all;
 }
+.tweet-message a {
+  color: #4a99e9;
+  text-decoration: none;
+}
 .tweet-image img {
   border-radius: 10px;
 }

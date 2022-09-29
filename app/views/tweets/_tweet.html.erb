@@ -20,7 +20,13 @@
             </div>
         </div>
         <div class=tweet-message>
-            <%= tweet.message %>
+            <% tweet.message.split(" ").each do |m| %>
+                <% if m.start_with?('#') %>
+                    <%= link_to m, '#' %>
+                <% else %>
+                    <%= m %>
+                <% end %>
+            <% end %>
         </div>
 
         <% if tweet.image.present?  %>
