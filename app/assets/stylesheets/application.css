@@ -88,10 +88,11 @@
 }
 
 #footer {
-  border-top: solid 2px #CCCCCC;
+  border-top: solid 1px #CCCCCC;
   text-align: center;
   clear: both;
   margin-top: 20px;
+  font-size: 11pt;
 }
 
 .logo {
@@ -115,6 +116,11 @@
   text-decoration: none;
   font-size: 16px !important;
   font-weight: 700;
+}
+
+.tweets :hover {
+	background-color:#e8e8e8;
+	cursor: pointer;
 }
 
 .tweet {
@@ -192,10 +198,9 @@
   display: flex;
   justify-content: end;
   align-items: center;
-  margin: 10px 0px 10px;
 }
 .tweet-action input {
-  margin-right: 20px;
+  margin-left: 15px;
   color: #ffffff;
   background: #4a99e9;
   border: none;

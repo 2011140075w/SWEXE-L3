@@ -1,3 +1,7 @@
-<% @tweets.each do |tweet| %>
-    <%= render 'tweet', tweet: tweet %>
-<% end %>
+<div class=tweets>
+    <% @tweets.each do |tweet| %>
+        <div class=tweet onclick="location.href='<%= tweet_path(tweet.id) %>'">
+            <%= render 'tweet', tweet: tweet %>
+        </div>
+    <% end %>
+</div>
